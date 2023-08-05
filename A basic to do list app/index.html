@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do web app</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>To-Do List Web App</h1>
+		<form id="task-form">
+			<input 
+				type="text" 
+				name="task-input" 
+				id="task-input" 
+				placeholder="Enter To-Do list.." />
+			<input 
+				type="submit"
+				id="task-submit" 
+				value="Add " />
+		</form>
+	</header>
+
+	<main>
+		<section class="task-list">
+			<h2>To-Do Tasks</h2>
+			<div id="tasks">
+			</div>
+		</section>
+        <section class="task-list">
+            <h2>Completed Tasks</h2>
+            <div id="completed-tasks"></div>
+          </section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
